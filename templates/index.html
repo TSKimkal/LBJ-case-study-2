@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            font-size:large;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="{{ url_for('route1') }}">Add new Student</a></li>
+        <li><a href="{{ url_for('route3') }}">Search for a Student by Id</a></li>
+        <li><a href="{{ url_for('route2') }}">Display all the Students</a></li>
+    </ul>
+
+</body>
+</html>

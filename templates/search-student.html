@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+            font-size: medium;
+            color: black;
+            width: 200px;
+            margin: 30px 0 0 50px;
+        }
+
+        .elements{
+            display: block;
+            margin-top: 10px;
+        }
+
+        .table{       
+          position: absolute;
+          font-size: 110%;
+          top: 20%;
+          left: 5%;
+          background: rgb(216, 215, 220);
+          }
+
+
+    </style>
+    <title>Search Student</title>
+</head>
+<body>
+       <form action="#" method="post">
+        <label for="search" class="elements">Student Id
+        <input type="text" name="search" id="search" required></label>
+
+        <input type="submit" class="elements" name="btn" id="btn" value="Submit">
+    </form>
+    <div class="table" align="center" style="text-align: center; ">
+    {% block body %}
+    {{data | safe}}   
+    {% endblock %}  
+
+  </div>
+</body>
+</html>

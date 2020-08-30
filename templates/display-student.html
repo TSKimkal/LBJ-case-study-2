@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Students</title>
+</head>
+
+
+<style type="text/css">
+	.table{       
+	  position: absolute;
+	  font-size: 110%;
+	  top: 20%;
+	  left: 25%;
+	  background: rgb(216, 215, 220);
+
+	  }
+</style>
+<body>
+	<h1 style="text-align: center;">Records</h1>
+     <div class="table" align="center" style="text-align: center ; ">
+    {% block body %}
+ 	{{data | safe}}   
+ 	{% endblock %}  
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box; 
+        }
+        .form-fillup{
+            color: black;
+            width: 200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            font-size: small;
+            margin-top:  30px; ;
+        }
+        .elements{
+            
+           display: block;
+           margin-top: 5px;
+           
+        }
+    </style>
+    <title>Add-Student</title>
+</head>
+<body>
+    <div class="form-fillup">
+        <form action="#" method="post">
+            <label for="s_id" class="elements">Student Id
+            <input type="text" name="s_id" id="s_id" required></label> 
+                    
+             <label for="s_name" class="elements">Student Name
+            <input type="text" name="s_name" id="s_name" required></label>
+            
+            <label for="gender" class="elements">Gender <br>
+            <input type="radio" name="gender" value="Male">Male <br>
+            <input type="radio" name="gender" value="Female">Female</label> 
+
+            <label for="date"class="elements">Date of Birth
+            <input type="date" name="date" id="date" min="1990-31-12" max="2000-31-12" required></label>
+
+            <label for="city"class="elements">City
+            <input type="text" name="city" id="city" required></label>
+
+            <label for="state"class="elements">State
+            <input type="text" name="state" id="state" required></label>
+
+            <label for="email"class="elements">Email Id
+            <input type="email" name="email" id="email" required></label>
+
+            <label for="quali"class="elements">Qualification
+            <input type="text" name="quali" id="quali" required></label>
+
+            <label for="stream"class="elements">Stream
+            <input type="text" name="stream" id="stream" required></label>
+
+            <input type="submit" class="elements" name="submit" id="submit" value="Submit">
+            
+            
+
+            
+        </form>
+
+    </div>
+    <script type="text/javascript">
+        function myFunction() {
+  var str = document.forms[2];
+  var txt = "";
+  var i;
+  for (i = 0; i < str.length; i++) {
+    if (str[i].checked) {
+      txt = txt + str[i].value + " ";
+    }
+  }
+}
+
+    </script>
+    
+</body>
+</html>

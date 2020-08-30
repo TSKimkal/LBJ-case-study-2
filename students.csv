@@ -1,0 +1,4 @@
+student_id,name,gender,DateOfBirth,City,State,EmailId,Qualification,Stream
+1,Raj,Male,1995-10-10,Mumbai,Maharashtra,raj@gmail.com,B.E.,Electronics
+2,Priyanka,Female,1995-10-20,Pune,Maharashtra,priyanka@gmail.com,B. Tech,IT
+3,Kaushik,Male,1998-10-15,Pune,Maharashtra,kaushik.daspute98@gmail.com,BE,E&TC
